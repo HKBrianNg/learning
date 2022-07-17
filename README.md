@@ -68,3 +68,18 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+Appliction 
+
+a)  Three main jobs of React Router:
+
+1. Subscribing and manipulating the history stack
+2. Matching the URL to your routes
+3. Rendering a nested UI from the route matches  
+
+Package :
+
+npm install react-router-dom@6
+
+b)
