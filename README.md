@@ -70,9 +70,35 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 
-Appliction 
+React Appliction
 
-a)  Three main jobs of React Router:
+React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes.
+
+Build encapsulated components that manage their own state, then compose them to make complex UIs.
+
+https://reactjs.org/
+
+
+a) Initialize react app
+
+1. open Visual Code Editor (VC)
+2. open a terminal in VC
+3. in VC terminal, create a app folder and then cd to it.
+4. npx create-react-app .
+
+Package.json -
+"@testing-library/jest-dom": "^5.16.4",
+"@testing-library/react": "^13.3.0",
+"@testing-library/user-event": "^13.5.0",
+"react": "^18.2.0",
+"react-dom": "^18.2.0",
+"react-scripts": "5.0.1",
+"web-vitals": "^2.1.4"
+
+
+b)  React Router:
+
+https://reactrouter.com/
 
 1. Subscribing and manipulating the history stack
 2. Matching the URL to your routes
@@ -82,4 +108,55 @@ Package :
 
 npm install react-router-dom@6
 
-b)
+ "react-router-dom": "^6.3.0",
+
+c) Material UI 
+
+https://mui.com/
+https://emotion.sh/docs/introduction
+
+It is a library of React UI components that implements Google's Material Design.
+Material UI is comprehensive in that it comes packaged with default styles, and is optimized to work with Emotion (or styled-components). Emotion supports all popular browsers, including Internet Explorer 11.
+
+Package :
+
+npm install @mui/material @emotion/react @emotion/styled
+
+"@emotion/react": "^11.9.3",
+"@emotion/styled": "^11.9.3",
+"@mui/material": "^5.9.0",
+
+d) Theme
+Explore the default theme object:
+https://mui.com/material-ui/customization/default-theme/
+
+write sample code to create theme
+
+import * as React from 'react';
+import { red } from '@mui/material/colors';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: red[500],
+    },
+  },
+});
+
+function App() {
+  return <ThemeProvider theme={theme}>...</ThemeProvider>;
+}
+
+
+e) Font
+Material is a design system created by Google to help teams build high-quality digital experiences for Android, iOS, Flutter, and the web.
+https://material.io/design/introduction#principles
+https://material.io/design/typography/the-type-system.html#type-scale
+
+You can install it by typing the below command in your terminal:
+npm install @fontsource/roboto
+
+"@fontsource/roboto": "^4.5.7",
+
+
