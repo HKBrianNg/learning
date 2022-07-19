@@ -170,5 +170,10 @@ npm install @fontsource/roboto
 
 "@fontsource/roboto": "^4.5.7",
 
-f) appbar
 
+f) react video player
+Play youtube video.
+
+npm install react-player
+
+ "react-player": "^2.10.1",
