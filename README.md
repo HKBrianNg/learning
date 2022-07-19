@@ -126,6 +126,10 @@ npm install @mui/material @emotion/react @emotion/styled
 "@emotion/styled": "^11.9.3",
 "@mui/material": "^5.9.0",
 
+npm install @mui/icons-material
+
+ "@mui/icons-material": "^5.8.4",
+
 d) Theme
 Explore the default theme object:
 https://mui.com/material-ui/customization/default-theme/
@@ -144,6 +148,10 @@ const theme = createTheme({
   },
 });
 
+global css setting
+
+https://mui.com/material-ui/guides/interoperability/#global-css
+
 function App() {
   return <ThemeProvider theme={theme}>...</ThemeProvider>;
 }
@@ -154,9 +162,13 @@ Material is a design system created by Google to help teams build high-quality d
 https://material.io/design/introduction#principles
 https://material.io/design/typography/the-type-system.html#type-scale
 
+https://www.oxxostudio.tw/articles/201809/css-font-size.html
+
+
 You can install it by typing the below command in your terminal:
 npm install @fontsource/roboto
 
 "@fontsource/roboto": "^4.5.7",
 
+f) appbar
 

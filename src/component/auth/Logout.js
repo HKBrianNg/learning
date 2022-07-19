@@ -1,13 +1,13 @@
 import React from 'react';
 import Navbar from '../header/Navbar';
 
-function Register() {
+function Logout() {
     return (
         <>
             <Navbar />
-            <div>Register</div>
+            <div>Logout</div>
         </>
     )
 }
 
-export default Register
+export default Logout
