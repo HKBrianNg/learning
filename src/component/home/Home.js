@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from '../header/Navbar';
-import { itemData } from '../../testdata/homedata';
+import { data } from '../../testdata/youtube-data1';
 import { Container, Box, ImageList, ImageListItem } from '@mui/material';
 import { useNavigate } from "react-router-dom";
 
@@ -13,11 +13,11 @@ const DisplayImage = ({ columns }) => {
 
     return (
         <ImageList variant="masonry" cols={columns} gap={8}>
-            {itemData.map((item) => (
-                <ImageListItem key={item.id} onClick={() => openImage(item.id)}>
+            {data.items.map((item) => (
+                <ImageListItem key={item.id.videoId} onClick={() => openImage(item.id.videoId)}>
                     <img
-                        src={item.img}
-                        alt={item.title}
+                        src={item.snippet.thumbnails.high.url}
+                        alt={item.snippet.title}
                         loading="lazy"
                     />
                 </ImageListItem>
