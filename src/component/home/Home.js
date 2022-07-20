@@ -3,7 +3,6 @@ import Navbar from '../header/Navbar';
 import { Container, Box } from '@mui/material';
 import VideoInfo from './VideoInfo';
 
-
 function Home() {
 
     return (

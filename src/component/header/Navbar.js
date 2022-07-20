@@ -2,14 +2,15 @@ import React, { useState } from 'react';
 import { AppBar, Container, Box, Toolbar, Typography, Button, Menu, MenuItem, Avatar } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import LocalLibraryIcon from '@mui/icons-material/LocalLibrary';
-
+import SearchVideo from './SearchVideo.js';
 import { Link } from 'react-router-dom';
+
 
 const DisplayLogo = () => {
     return (
-        <Link to='/home' style={{ textDecoration: 'none', display: 'flex', color: 'white', }}>
+        <Link to='/home' style={{ textDecoration: 'none', display: 'flex', color: 'white', marginRight: 1, }}>
             <LocalLibraryIcon fontSize="large" sx={{ mr: '8px', }} />
-            <Typography variant='h6'>Learning</Typography>
+            <Typography variant='h6' sx={{ marginRight: 1 }}>Learning</Typography>
         </Link>
     );
 }
@@ -62,6 +63,9 @@ function Navbar() {
                     </Box>
                     <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' }, }}>
                         <DisplayLogo />
+                    </Box>
+                    <Box sx={{ flexGrow: 1, margin: 1, color: 'white' }}>
+                        <SearchVideo />
                     </Box>
                     <Avatar onClick={handleUserClick} sx={{}} src={user} />
                     <Menu anchorEl={anchorElUser} open={openUser} onClose={handleUserClose} >
