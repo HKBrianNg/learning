@@ -17,7 +17,7 @@ function VideoInfo() {
     return (
         <>
             {data.items.map((item) => (
-                <Card sx={{ maxWidth: 400 }}>
+                <Card sx={{ maxWidth: 400, padding: 2 }}>
                     <CardMedia
                         component="img"
                         height="180"

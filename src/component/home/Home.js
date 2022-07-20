@@ -10,10 +10,10 @@ function Home() {
         <>
             <Navbar />
             <Container maxWidth='xl'>
-                <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, flexWrap: 'wrap' }}>
+                <Box sx={{ flexGrow: 1, padding: 1, display: { xs: 'none', md: 'flex' }, flexWrap: 'wrap' }}>
                     <VideoInfo />
                 </Box>
-                <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' }, flexWrap: 'wrap' }}>
+                <Box sx={{ flexGrow: 1, padding: 1, display: { xs: 'flex', md: 'none' }, flexWrap: 'wrap' }}>
                     <VideoInfo />
                 </Box>
             </Container>
