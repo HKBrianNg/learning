@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
-import { Box, TextField, Autocomplete, IconButton, Button } from '@mui/material';
+import { Box, TextField, Autocomplete, Button } from '@mui/material';
 import { styled, alpha } from '@mui/material/styles';
 import { data } from '../../testdata/youtube-data1';
 import { useNavigate } from 'react-router-dom';
