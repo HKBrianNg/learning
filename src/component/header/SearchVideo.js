@@ -44,11 +44,14 @@ function SearchVideo() {
                     renderInput={(params) => <TextField {...params} />}
                 />
 
-                <Button onClick={videoId && openVideo}>
+                {/* <Button onClick={videoId && openVideo}>
                     <IconButton color='primary' size="medium">
                         <SearchOutlinedIcon />
                     </IconButton>
-                </Button>
+                </Button> */}
+                {/* <Button onClick={videoId && openVideo}>
+                    <SearchOutlinedIcon />
+                </Button> */}
             </Search>
 
         </Box>
