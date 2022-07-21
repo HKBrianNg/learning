@@ -29,7 +29,8 @@ function SearchVideo() {
     }
 
     const openVideo = () => {
-        navigate(`/home/video/${videoId}`, { replace: true });
+
+        videoId && navigate(`/home/video/${videoId}`, { replace: true });
     }
 
     return (
@@ -44,14 +45,9 @@ function SearchVideo() {
                     renderInput={(params) => <TextField {...params} />}
                 />
 
-                {/* <Button onClick={videoId && openVideo}>
-                    <IconButton color='primary' size="medium">
-                        <SearchOutlinedIcon />
-                    </IconButton>
-                </Button> */}
-                {/* <Button onClick={videoId && openVideo}>
+                <Button onClick={openVideo}>
                     <SearchOutlinedIcon />
-                </Button> */}
+                </Button>
             </Search>
 
         </Box>
