@@ -77,6 +77,12 @@ function Navbar() {
                         </Link>
                     </Menu>
                 </Toolbar>
+                <Toolbar sx={{ display: { xs: 'flex', md: 'none' }, padding: 0, }}>
+                    <Box sx={{ flexGrow: 1, margin: 1, alignItems: 'center' }}>
+                        <SearchVideo />
+                    </Box>
+                </Toolbar>
+
             </Container>
         </AppBar>
     );
