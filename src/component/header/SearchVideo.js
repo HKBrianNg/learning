@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
-import { Box, TextField, Autocomplete } from '@mui/material';
+import { Box, TextField, Autocomplete, IconButton, Button } from '@mui/material';
 import { styled, alpha } from '@mui/material/styles';
 import { data } from '../../testdata/youtube-data1';
-
+import { useNavigate } from 'react-router-dom';
 
 const Search = styled('div')(({ theme }) => ({
     position: 'relative',
@@ -19,17 +19,19 @@ const Search = styled('div')(({ theme }) => ({
     marginLeft: 0,
 }));
 
-const SearchIconWrapper = styled('div')(({ theme }) => ({
-    padding: theme.spacing(0, 1),
-    // height: '100%',
-    position: 'relative',
-    pointerEvents: 'none',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-}));
 
 function SearchVideo() {
+    const [videoId, setVideoId] = useState('');
+    const navigate = useNavigate();
+
+    const handleChange = (id) => {
+        setVideoId(id);
+    }
+
+    const openVideo = () => {
+        navigate(`/home/video/${videoId}`, { replace: true });
+    }
+
     return (
         <Box sx={{ display: 'flex', alignItems: 'flex-end' }}>
             <Search>
@@ -37,14 +39,18 @@ function SearchVideo() {
                     options={data.items}
                     getOptionLabel={(option) => option.snippet.title}
                     disablePortal
-                    id="combo-box-demo"
                     sx={{ input: { color: "white", }, width: '40ch', }}
+                    onChange={(event, value) => handleChange(value.id.videoId)}
                     renderInput={(params) => <TextField {...params} />}
                 />
-                <SearchIconWrapper>
-                    <SearchOutlinedIcon />
-                </SearchIconWrapper>
+
+                <Button onClick={videoId && openVideo}>
+                    <IconButton color='primary' size="medium">
+                        <SearchOutlinedIcon />
+                    </IconButton>
+                </Button>
             </Search>
+
         </Box>
     )
 }
