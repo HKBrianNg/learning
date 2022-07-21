@@ -24,8 +24,8 @@ function SearchVideo() {
     const [videoId, setVideoId] = useState('');
     const navigate = useNavigate();
 
-    const handleChange = (id) => {
-        setVideoId(id);
+    const handleChange = (value) => {
+        value && setVideoId(value.id.videoId);
     }
 
     const openVideo = () => {
@@ -41,7 +41,7 @@ function SearchVideo() {
                     getOptionLabel={(option) => option.snippet.title}
                     disablePortal
                     sx={{ input: { color: "white", }, width: '40ch', }}
-                    onChange={(event, value) => handleChange(value.id.videoId)}
+                    onChange={(event, value) => handleChange(value)}
                     renderInput={(params) => <TextField {...params} />}
                 />
 
