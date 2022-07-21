@@ -34,7 +34,7 @@ function About() {
                     </Box>
                     <Box sx={{ flex: 0.5, padding: 1 }}>
                         {docData.items.map((item) => (
-                            <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
+                            <Accordion expanded={expanded === item.id} onChange={handleChange(item.id)}>
                                 <AccordionSummary
                                     expandIcon={<ExpandMoreIcon />}
                                     aria-controls="panel1bh-content"
