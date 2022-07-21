@@ -64,7 +64,7 @@ function Navbar() {
                     <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' }, }}>
                         <DisplayLogo />
                     </Box>
-                    <Box sx={{ flexGrow: 1, margin: 1, color: 'white' }}>
+                    <Box sx={{ flexGrow: 2, margin: 1, display: { xs: 'none', md: 'flex' } }}>
                         <SearchVideo />
                     </Box>
                     <Avatar onClick={handleUserClick} sx={{}} src={user} />
