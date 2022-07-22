@@ -3,12 +3,11 @@ import { Routes, Route } from "react-router-dom";
 import Home from './component/home/Home';
 import Login from './component/auth/Login';
 import Register from './component/auth/Register';
-import About from './component/about/About';
 import Search from './component/search/Search';
 import Logout from './component/auth/Logout';
 import VideoDetails from './component/video/VideoDetails';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
-
+import About from './component/about/About';
 
 
 function App() {

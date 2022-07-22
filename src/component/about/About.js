@@ -1,9 +1,13 @@
-import React, { useState } from 'react';
+import * as React from 'react';
+import PropTypes from 'prop-types';
+import Tabs from '@mui/material/Tabs';
+import Tab from '@mui/material/Tab';
+import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box';
 import Navbar from '../header/Navbar';
-import AppService from './AppService';
-import DevOps from './DevOps';
-import { Container, Box, Tabs, Tab, Typography } from '@mui/material';
-
+import AboutTemplate from './AboutTemplate';
+import { data as AppServiceData } from '../../data/AppServiceData';
+import { data as DevOpsData } from '../../data/DevOpsData';
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -18,43 +22,54 @@ function TabPanel(props) {
         >
             {value === index && (
                 <Box sx={{ p: 3 }}>
-                    <Typography>{children}</Typography>
+                    <Typography component='span'>{children}</Typography>
                 </Box>
             )}
         </div>
     );
 }
 
+TabPanel.propTypes = {
+    children: PropTypes.node,
+    index: PropTypes.number.isRequired,
+    value: PropTypes.number.isRequired,
+};
+
+function a11yProps(index) {
+    return {
+        id: `simple-tab-${index}`,
+        'aria-controls': `simple-tabpanel-${index}`,
+    };
+}
+
 function About() {
-    const [value, setValue] = useState(0);
+    const [value, setValue] = React.useState(0);
 
     const handleChange = (event, newValue) => {
         setValue(newValue);
     };
+
     return (
         <>
             <Navbar />
-            <Container maxWidth='xl'>
-                <Box sx={{ width: '100%', bgcolor: 'background.paper' }}>
-                    <Tabs scrollButtons allowScrollButtonsMobilevalue={value} onChange={handleChange} centered>
-                        <Tab label="Application Service" />
-                        <Tab label="DevOps" />
-                        <Tab label="" />
+            <Box sx={{ width: '100%' }}>
+                <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
+                    <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
+                        <Tab label="Application Service" {...a11yProps(0)} />
+                        <Tab label="DevOps" {...a11yProps(1)} />
+                        <Tab label="React" {...a11yProps(2)} />
                     </Tabs>
                 </Box>
                 <TabPanel value={value} index={0}>
-                    <AppService />
+                    <AboutTemplate data={AppServiceData} />
                 </TabPanel>
                 <TabPanel value={value} index={1}>
-                    <DevOps />
+                    <AboutTemplate data={DevOpsData} />
                 </TabPanel>
                 <TabPanel value={value} index={2}>
-                    Item Three
+                    React component
                 </TabPanel>
-
-            </Container>
-
-
+            </Box>
         </>
     );
 }

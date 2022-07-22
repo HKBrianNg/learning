@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
-import { data } from '../../data/DevOpsData';
 import { Container, Box, Stack, Paper, Typography, Accordion, AccordionSummary, AccordionDetails } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import { grey } from '@mui/material/colors';
 import VideoInfo from '../video/VideoInfo';
+import { grey } from '@mui/material/colors';
 
 
-function DevOps() {
+function AboutTemplate({ data }) {
     const [expanded, setExpanded] = useState(false);
 
     const handleChange = (panel) => (event, isExpanded) => {
@@ -21,15 +20,13 @@ function DevOps() {
                     <Box sx={{ flex: 1, padding: 1 }}>
                         <Paper padding={3}>
                             <Typography variant="h4" gutterBottom component="div" align='center'>
-                                <i>
-                                    {data.title}
-                                </i>
+                                {data.title}
                             </Typography>
                             <Typography variant="h6" gutterBottom component="div" sx={{ paddingX: 2 }} >
                                 {data.summary}
                             </Typography>
                             <Typography variant='body1' gutterBottom component="div" sx={{ padding: 2, color: grey[600] }}>
-                                <p>{data.content}</p>
+                                {data.content}
                             </Typography>
                         </Paper>
                     </Box>
@@ -53,12 +50,12 @@ function DevOps() {
                         ))};
                     </Box>
                     <Box sx={{ flex: 1, padding: 1, height: 700, overflow: "hidden", overflowY: "scroll" }}>
-                        <VideoInfo filter={{ category: 'IT', subCategory: 'DevOps' }} />
+                        <VideoInfo filter={{ category: 'IT', subCategory: 'Application Service' }} />
                     </Box>
                 </Stack>
             </Container>
         </>
-    );
+    )
 }
 
-export default DevOps;
+export default AboutTemplate;
