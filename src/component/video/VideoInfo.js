@@ -26,7 +26,7 @@ function VideoInfo({ filter }) {
                 <Card key={item.videoId} sx={{ maxWidth: 400, padding: 2 }}>
                     <CardMedia
                         component="img"
-                        height="180"
+                        height="200"
                         width="320"
                         image={item.thumbnailUrl}
                         alt={item.title}

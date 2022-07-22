@@ -8,6 +8,8 @@ import Navbar from '../header/Navbar';
 import AboutTemplate from './AboutTemplate';
 import { data as AppServiceData } from '../../data/AppServiceData';
 import { data as DevOpsData } from '../../data/DevOpsData';
+import { data as CICDData } from '../../data/CICDData';
+
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -57,7 +59,7 @@ function About() {
                     <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
                         <Tab label="Application Service" {...a11yProps(0)} />
                         <Tab label="DevOps" {...a11yProps(1)} />
-                        <Tab label="React" {...a11yProps(2)} />
+                        <Tab label="CICD" {...a11yProps(2)} />
                     </Tabs>
                 </Box>
                 <TabPanel value={value} index={0}>
@@ -67,7 +69,7 @@ function About() {
                     <AboutTemplate data={DevOpsData} filter={{ category: 'IT', subCategory: 'DevOps' }} />
                 </TabPanel>
                 <TabPanel value={value} index={2}>
-                    React component
+                    <AboutTemplate data={CICDData} filter={{ category: 'IT', subCategory: 'CICD' }} />
                 </TabPanel>
             </Box>
         </>
