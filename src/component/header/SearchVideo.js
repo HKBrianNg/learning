@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import { Box, TextField, Autocomplete, Button } from '@mui/material';
 import { styled, alpha } from '@mui/material/styles';
-import { data } from '../../testdata/youtube-data1';
+import { videoData } from '../../data/videoData';
 import { useNavigate } from 'react-router-dom';
 
 const Search = styled('div')(({ theme }) => ({
@@ -25,7 +25,7 @@ function SearchVideo() {
     const navigate = useNavigate();
 
     const handleChange = (value) => {
-        value && setVideoId(value.id.videoId);
+        value && setVideoId(value.videoId);
     }
 
     const openVideo = () => {
@@ -37,8 +37,8 @@ function SearchVideo() {
         <Box sx={{ display: 'flex', alignItems: 'flex-end' }}>
             <Search>
                 <Autocomplete
-                    options={data.items}
-                    getOptionLabel={(option) => option.snippet.title}
+                    options={videoData}
+                    getOptionLabel={(option) => option.title}
                     disablePortal
                     sx={{ input: { color: "white", }, width: '40ch', }}
                     onChange={(event, value) => handleChange(value)}

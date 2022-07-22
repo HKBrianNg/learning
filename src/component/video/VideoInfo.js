@@ -3,7 +3,7 @@ import { deepOrange } from '@mui/material/colors';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShareIcon from '@mui/icons-material/Share';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
-import { data } from '../../testdata/youtube-data1';
+import { videoData } from '../../data/videoData';
 import { useNavigate } from 'react-router-dom';
 
 
@@ -16,25 +16,26 @@ function VideoInfo() {
 
     return (
         <>
-            {data.items.map((item) => (
-                <Card key={item.id.videoId} sx={{ maxWidth: 400, padding: 2 }}>
+            {videoData.map((item) => (
+
+                <Card key={item.videoId} sx={{ maxWidth: 400, padding: 2 }}>
                     <CardMedia
                         component="img"
                         height="180"
                         width="320"
-                        image={item.snippet.thumbnails.medium.url}
-                        alt={item.snippet.title}
-                        onClick={() => openVideo(item.id.videoId)}
+                        image={item.thumbnailUrl}
+                        alt={item.title}
+                        onClick={() => openVideo(item.videoId)}
                     />
                     <CardHeader
                         avatar={<Avatar sx={{ bgcolor: deepOrange[500], width: 56, height: 56 }}>Save</Avatar>}
                         action={<IconButton aria-label="settings"><MoreVertIcon /></IconButton>}
-                        title={item.snippet.title}
-                        subheader={item.snippet.publishedAt}
+                        title={item.title}
+                        subheader={item.publishedAt}
                     />
                     <CardContent>
                         <Typography variant="body2" color="text.secondary">
-                            {item.snippet.description}
+                            {item.description}
                         </Typography>
                     </CardContent>
                     <CardActions disableSpacing>

@@ -4,6 +4,8 @@ import { docData } from '../../data/docData';
 import { Container, Box, Stack, Paper, Typography, Accordion, AccordionSummary, AccordionDetails } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { grey } from '@mui/material/colors';
+import VideoInfo from '../video/VideoInfo';
+
 
 function About() {
     const [expanded, setExpanded] = useState(false);
@@ -12,12 +14,13 @@ function About() {
         setExpanded(isExpanded ? panel : false);
     };
 
+
     return (
         <>
             <Navbar />
             <Container maxWidth='xl'>
-                <Stack display='flex' direction='row'>
-                    <Box sx={{ flex: 0.5, padding: 1 }}>
+                <Stack display='flex' direction={{ xs: 'column', md: 'row' }} >
+                    <Box sx={{ flex: 1, padding: 1 }}>
                         <Paper padding={3}>
                             <Typography variant="h4" gutterBottom component="div" align='center'>
                                 <i>
@@ -32,7 +35,7 @@ function About() {
                             </Typography>
                         </Paper>
                     </Box>
-                    <Box sx={{ flex: 0.5, padding: 1 }}>
+                    <Box sx={{ flex: 1, padding: 1 }}>
                         {docData.items.map((item) => (
                             <Accordion expanded={expanded === item.id} onChange={handleChange(item.id)}>
                                 <AccordionSummary
@@ -52,6 +55,9 @@ function About() {
                                 </AccordionDetails>
                             </Accordion>
                         ))};
+                    </Box>
+                    <Box sx={{ flex: 1, padding: 1, height: 700, overflow: "hidden", overflowY: "scroll" }}>
+                        <VideoInfo />
                     </Box>
                 </Stack>
             </Container>

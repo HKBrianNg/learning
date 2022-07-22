@@ -6,7 +6,7 @@ import Register from './component/auth/Register';
 import About from './component/about/About';
 import Search from './component/search/Search';
 import Logout from './component/auth/Logout';
-import VideoDetails from './component/home/VideoDetails';
+import VideoDetails from './component/video/VideoDetails';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 
 

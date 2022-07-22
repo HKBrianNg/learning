@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from '../header/Navbar';
 import { Container, Box } from '@mui/material';
-import VideoInfo from './VideoInfo';
+import VideoInfo from '../video/VideoInfo';
 
 function Home() {
 
