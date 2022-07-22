@@ -5,7 +5,7 @@ import VideoInfo from '../video/VideoInfo';
 import { grey } from '@mui/material/colors';
 
 
-function AboutTemplate({ data }) {
+function AboutTemplate({ data, filter }) {
     const [expanded, setExpanded] = useState(false);
 
     const handleChange = (panel) => (event, isExpanded) => {
@@ -50,7 +50,7 @@ function AboutTemplate({ data }) {
                         ))};
                     </Box>
                     <Box sx={{ flex: 1, padding: 1, height: 700, overflow: "hidden", overflowY: "scroll" }}>
-                        <VideoInfo filter={{ category: 'IT', subCategory: 'Application Service' }} />
+                        <VideoInfo filter={filter} />
                     </Box>
                 </Stack>
             </Container>

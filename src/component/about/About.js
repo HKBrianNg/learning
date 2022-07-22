@@ -61,10 +61,10 @@ function About() {
                     </Tabs>
                 </Box>
                 <TabPanel value={value} index={0}>
-                    <AboutTemplate data={AppServiceData} />
+                    <AboutTemplate data={AppServiceData} filter={{ category: 'IT', subCategory: 'Application Service' }} />
                 </TabPanel>
                 <TabPanel value={value} index={1}>
-                    <AboutTemplate data={DevOpsData} />
+                    <AboutTemplate data={DevOpsData} filter={{ category: 'IT', subCategory: 'DevOps' }} />
                 </TabPanel>
                 <TabPanel value={value} index={2}>
                     React component
