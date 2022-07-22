@@ -38,7 +38,7 @@ export const videoData = [
     {
         "id": "4",
         "category": "IT",
-        "subCategory": 'Application Service',
+        "subCategory": '',
         "source": "youtube#video",
         "videoId": "",
         "videoUrl": "",

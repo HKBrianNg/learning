@@ -7,8 +7,13 @@ import { videoData } from '../../data/videoData';
 import { useNavigate } from 'react-router-dom';
 
 
-function VideoInfo() {
+function VideoInfo({ filter }) {
     let navigate = useNavigate();
+
+    let data = videoData;
+    if (filter) {
+        data = videoData.filter((item) => (item.subCategory === filter.subCategory && item.category === filter.category));
+    }
 
     const openVideo = (id) => {
         navigate(`/home/video/${id}`, { replace: true });
@@ -16,7 +21,7 @@ function VideoInfo() {
 
     return (
         <>
-            {videoData.map((item) => (
+            {data.map((item) => (
 
                 <Card key={item.videoId} sx={{ maxWidth: 400, padding: 2 }}>
                     <CardMedia
@@ -27,8 +32,8 @@ function VideoInfo() {
                         alt={item.title}
                         onClick={() => openVideo(item.videoId)}
                     />
-                    <CardHeader
-                        avatar={<Avatar sx={{ bgcolor: deepOrange[500], width: 56, height: 56 }}>Save</Avatar>}
+                    <CardHeader sx={{ color: deepOrange[600], }}
+                        avatar={<Avatar sx={{ bgcolor: deepOrange[600], width: 56, height: 56 }}>Save</Avatar>}
                         action={<IconButton aria-label="settings"><MoreVertIcon /></IconButton>}
                         title={item.title}
                         subheader={item.publishedAt}

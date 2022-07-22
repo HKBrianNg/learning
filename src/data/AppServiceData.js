@@ -1,4 +1,4 @@
-export const docData =
+export const data =
 {
     "title": "Application Service",
     "summary": "This e-book outlines eight steps that any organization should consider when looking to adopt a cloud - native approach to applications.",
