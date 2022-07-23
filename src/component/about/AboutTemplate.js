@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container, Box, Stack, Paper, Typography, Accordion, AccordionSummary, AccordionDetails } from '@mui/material';
+import { Container, Box, Stack, Paper, Typography, Accordion, AccordionSummary, AccordionDetails, Link } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import VideoInfo from '../video/VideoInfo';
 import { grey } from '@mui/material/colors';
@@ -42,9 +42,11 @@ function AboutTemplate({ data, filter }) {
                                     <Typography sx={{ color: 'text.secondary' }}>{item.summary}</Typography>
                                 </AccordionSummary>
                                 <AccordionDetails>
-                                    <Typography>
-                                        {item.content}
-                                    </Typography>
+                                    {item.content.substring(0, 4) === 'http'
+                                        ? (<Link target="_blank" rel="noopener" href={item.content}>{item.content}</Link>)
+                                        : (item.content)
+                                    }
+
                                 </AccordionDetails>
                             </Accordion>
                         ))};
