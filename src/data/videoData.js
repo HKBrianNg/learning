@@ -99,6 +99,19 @@ export const videoData = [
         "thumbnailUrl": "https://i.ytimg.com/vi/fdQ7MmQNTa0/maxresdefault.jpg",
     },
     {
+        "id": "d5",
+        "category": "IT",
+        "subCategory": 'Docker',
+        "source": "youtube#video",
+        "videoId": "SzzwFauxK98",
+        "publishedAt": "2020-06-22",
+        "title": "Automated Docker Builds with DockerHub and GitHub, learn docker for beginners tutorial",
+        "description": " In this episode, I'll teach you how to connect DockerHub to Github and to setup automated builds for 'master' and version tags for releases. Learn Docker now! Automated builds for Docker are a thing, and are the beginning of the CI/CD practice. Continues Integration and Continues Deployment.",
+        "thumbnailUrl": "https://i.ytimg.com/vi/SzzwFauxK98/maxresdefault.jpg",
+    },
+
+
+    {
         "id": "e1",
         "category": "IT",
         "subCategory": 'Microservices',
