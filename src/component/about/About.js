@@ -9,8 +9,10 @@ import AboutTemplate from './AboutTemplate';
 import { data as AppServiceData } from '../../data/AppServiceData';
 import { data as DevOpsData } from '../../data/DevOpsData';
 import { data as CICDData } from '../../data/CICDData';
+import { data as IDEData } from '../../data/IDEData';
 import { data as DockerData } from '../../data/DockerData';
 import { data as MicroservicesData } from '../../data/MicroservicesData';
+import { data as GitHubData } from '../../data/GitHubData';
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -61,8 +63,10 @@ function About() {
                         <Tab label="Application Service" {...a11yProps(0)} />
                         <Tab label="DevOps" {...a11yProps(1)} />
                         <Tab label="CICD" {...a11yProps(2)} />
-                        <Tab label="Docker" {...a11yProps(3)} />
-                        <Tab label="Microservices" {...a11yProps(4)} />
+                        <Tab label="IDE" {...a11yProps(3)} />
+                        <Tab label="GitHub" {...a11yProps(4)} />
+                        <Tab label="Docker" {...a11yProps(5)} />
+                        <Tab label="Microservices" {...a11yProps(6)} />
                     </Tabs>
                 </Box>
                 <TabPanel value={value} index={0}>
@@ -75,9 +79,15 @@ function About() {
                     <AboutTemplate data={CICDData} filter={{ category: 'IT', subCategory: 'CICD' }} />
                 </TabPanel>
                 <TabPanel value={value} index={3}>
-                    <AboutTemplate data={DockerData} filter={{ category: 'IT', subCategory: 'Docker' }} />
+                    <AboutTemplate data={IDEData} filter={{ category: 'IT', subCategory: 'IDE' }} />
                 </TabPanel>
                 <TabPanel value={value} index={4}>
+                    <AboutTemplate data={GitHubData} filter={{ category: 'IT', subCategory: 'GitHub' }} />
+                </TabPanel>
+                <TabPanel value={value} index={5}>
+                    <AboutTemplate data={DockerData} filter={{ category: 'IT', subCategory: 'Docker' }} />
+                </TabPanel>
+                <TabPanel value={value} index={6}>
                     <AboutTemplate data={MicroservicesData} filter={{ category: 'IT', subCategory: 'Microservices' }} />
                 </TabPanel>
             </Box>

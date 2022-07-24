@@ -57,6 +57,39 @@ export const videoData = [
     {
         "id": "d1",
         "category": "IT",
+        "subCategory": 'IDE',
+        "source": "youtube#video",
+        "videoId": "B-s71n0dHUk",
+        "publishedAt": "2022-04-29",
+        "title": "Learn Visual Studio Code in 7min (Official Beginner Tutorial)",
+        "description": "Get started from scratch in this short overview of Visual Studio Code & writing / executing JavaScript, Python, previewing HTML and more.",
+        "thumbnailUrl": "https://i.ytimg.com/vi/B-s71n0dHUk/maxresdefault.jpg",
+    },
+    {
+        "id": "e1",
+        "category": "IT",
+        "subCategory": 'Github',
+        "source": "youtube#video",
+        "videoId": "",
+        "publishedAt": "",
+        "title": "",
+        "description": "",
+        "thumbnailUrl": "https://i.ytimg.com/vi/bRW5r7TK6KM/maxresdefault.jpg",
+    },
+    {
+        "id": "e2",
+        "category": "IT",
+        "subCategory": 'Github',
+        "source": "youtube#video",
+        "videoId": "",
+        "publishedAt": "",
+        "title": "",
+        "description": "",
+        "thumbnailUrl": "https://i.ytimg.com/vi/bRW5r7TK6KM/maxresdefault.jpg",
+    },
+    {
+        "id": "f1",
+        "category": "IT",
         "subCategory": 'Docker',
         "source": "youtube#video",
         "videoId": "bRW5r7TK6KM",
@@ -66,7 +99,7 @@ export const videoData = [
         "thumbnailUrl": "https://i.ytimg.com/vi/bRW5r7TK6KM/maxresdefault.jpg",
     },
     {
-        "id": "d2",
+        "id": "f2",
         "category": "IT",
         "subCategory": 'Docker',
         "source": "youtube#video",
@@ -77,7 +110,7 @@ export const videoData = [
         "thumbnailUrl": "https://i.ytimg.com/vi/9jQthJ2uvLI/maxresdefault.jpg",
     },
     {
-        "id": "d3",
+        "id": "f3",
         "category": "IT",
         "subCategory": 'Docker',
         "source": "youtube#video",
@@ -88,7 +121,7 @@ export const videoData = [
         "thumbnailUrl": "https://i.ytimg.com/vi/pTFZFxd4hOI/maxresdefault.jpg",
     },
     {
-        "id": "d4",
+        "id": "f4",
         "category": "IT",
         "subCategory": 'Docker',
         "source": "youtube#video",
@@ -99,7 +132,7 @@ export const videoData = [
         "thumbnailUrl": "https://i.ytimg.com/vi/fdQ7MmQNTa0/maxresdefault.jpg",
     },
     {
-        "id": "d5",
+        "id": "f5",
         "category": "IT",
         "subCategory": 'Docker',
         "source": "youtube#video",
@@ -112,7 +145,7 @@ export const videoData = [
 
 
     {
-        "id": "e1",
+        "id": "g1",
         "category": "IT",
         "subCategory": 'Microservices',
         "source": "youtube#video",
