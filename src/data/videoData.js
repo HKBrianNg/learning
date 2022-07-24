@@ -88,6 +88,17 @@ export const videoData = [
         "thumbnailUrl": "https://i.ytimg.com/vi/pTFZFxd4hOI/maxresdefault.jpg",
     },
     {
+        "id": "d4",
+        "category": "IT",
+        "subCategory": 'Docker',
+        "source": "youtube#video",
+        "videoId": "fdQ7MmQNTa0",
+        "publishedAt": "2017-05-30",
+        "title": "How to Safely Push Docker Image to Docker Hub Remote Registry",
+        "description": "In this video I show you how to push a local docker image to the remote repository Docker Hub. Commands needed - 1) docker ps -a 2) docker images 3) docker push 4) docker pull 5) docker commit",
+        "thumbnailUrl": "https://i.ytimg.com/vi/fdQ7MmQNTa0/maxresdefault.jpg",
+    },
+    {
         "id": "e1",
         "category": "IT",
         "subCategory": 'Microservices',
