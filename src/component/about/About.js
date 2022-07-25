@@ -59,7 +59,7 @@ function About() {
             <Navbar />
             <Box sx={{ width: '100%' }}>
                 <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-                    <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
+                    <Tabs scrollButtons allowScrollButtonsMobile value={value} onChange={handleChange} aria-label="basic tabs example">
                         <Tab label="Application Service" {...a11yProps(0)} />
                         <Tab label="DevOps" {...a11yProps(1)} />
                         <Tab label="CICD" {...a11yProps(2)} />
