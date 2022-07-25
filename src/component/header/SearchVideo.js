@@ -40,7 +40,7 @@ function SearchVideo() {
                     options={videoData}
                     getOptionLabel={(option) => option.title}
                     disablePortal
-                    sx={{ input: { color: "white", }, width: '25ch', }}
+                    sx={{ input: { color: "white", }, width: '20ch', }}
                     onChange={(event, value) => handleChange(value)}
                     renderInput={(params) => <TextField {...params} />}
                 />
