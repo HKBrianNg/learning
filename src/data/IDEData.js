@@ -13,26 +13,14 @@ export const data =
         {
             "id": "2",
             "title": "Step 2",
-            "summary": "Walkthrough - Learn Visual Studio code in 7 min",
-            "content": "Get started from scratch in this short overview of Visual Studio Code & writing / executing JavaScript, Python, previewing HTML and more.",
+            "summary": "Waltkthrough Learn Visual Studio Code in 7min",
+            "content": "Here's how to use VS Code to create a simple setup for a front-end workflow for HTML, SCSS/CSS, and vanilla JavaScript files.",
         },
         {
             "id": "3",
-            "title": "Step 3",
-            "summary": "",
-            "content": "",
-        },
-        {
-            "id": "4",
-            "title": "Step 4",
-            "summary": "",
-            "content": "",
-        },
-        {
-            "id": "5",
-            "title": "Step 5",
-            "summary": "",
-            "content": "",
+            "title": "Step 3 (optional)",
+            "summary": "Waltkthrough a real example - How I setup VS Code for a beginners front-end workflow",
+            "content": "Here's how to use VS Code to create a simple setup for a front-end workflow for HTML, SCSS/CSS, and vanilla JavaScript files.",
         },
     ],
 }

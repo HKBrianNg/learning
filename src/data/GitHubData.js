@@ -13,8 +13,8 @@ export const data =
         {
             "id": "2",
             "title": "Step 2",
-            "summary": "Snapshots, not deltas",
-            "content": "One of the first ideas you will need understand is that Git does not store your information as series of changes. Instead, Git takes a snapshot of your repository at a given point in time. This snapshot is called a commit.",
+            "summary": "Snapshots, not details",
+            "content": "Git does not store your information as series of changes. Instead, Git takes a snapshot of your repository at a given point in time. This snapshot is called a commit.",
         },
         {
             "id": "3",
@@ -45,6 +45,12 @@ export const data =
             "title": "Step 7",
             "summary": "Git cheat sheet",
             "content": "https://training.github.com/downloads/github-git-cheat-sheet/",
+        },
+        {
+            "id": "8",
+            "title": "Step 8",
+            "summary": "Walkthrough the vidoes. The last one is optional.",
+            "content": "",
         },
     ],
 }

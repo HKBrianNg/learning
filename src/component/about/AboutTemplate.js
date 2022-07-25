@@ -49,7 +49,7 @@ function AboutTemplate({ data, filter }) {
 
                                 </AccordionDetails>
                             </Accordion>
-                        ))};
+                        ))}
                     </Box>
                     <Box sx={{ flex: 1, padding: 1, height: 700, overflow: "hidden", overflowY: "scroll" }}>
                         <VideoInfo filter={filter} />
