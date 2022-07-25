@@ -3,7 +3,6 @@ import { Routes, Route } from "react-router-dom";
 import Home from './component/home/Home';
 import Login from './component/auth/Login';
 import Register from './component/auth/Register';
-import Search from './component/search/Search';
 import Logout from './component/auth/Logout';
 import VideoDetails from './component/video/VideoDetails';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
@@ -27,7 +26,6 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/home/video/:id" element={<VideoDetails />} />
-          <Route path="/search/:searchstring" element={<Search />} />
           <Route path="/auth/login" element={<Login />} />
           <Route path="/auth/register" element={<Register />} />
           <Route path="/auth/logout" element={<Logout />} />

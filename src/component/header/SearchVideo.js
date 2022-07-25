@@ -15,7 +15,7 @@ const Search = styled('div')(({ theme }) => ({
         backgroundColor: alpha(theme.palette.common.white, 0.25),
         border: '2px solid white',
     },
-    marginRight: theme.spacing(2),
+    marginRight: theme.spacing(1),
     marginLeft: 0,
 }));
 
@@ -40,13 +40,13 @@ function SearchVideo() {
                     options={videoData}
                     getOptionLabel={(option) => option.title}
                     disablePortal
-                    sx={{ input: { color: "white", }, width: '30ch', }}
+                    sx={{ input: { color: "white", }, width: '25ch', }}
                     onChange={(event, value) => handleChange(value)}
                     renderInput={(params) => <TextField {...params} />}
                 />
 
                 <Button onClick={openVideo}>
-                    <SearchOutlinedIcon />
+                    <SearchOutlinedIcon fontSize='medium' sx={{ color: 'white' }} />
                 </Button>
             </Search>
 
