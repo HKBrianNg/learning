@@ -21,7 +21,7 @@ function VideoDetails() {
             </Link>
             <Container maxWidth="lg">
                 <div className='playerWrapper'>
-                    <ReactPlayer className='react-player' controls={true} url={videoUrl} height="80%" width="100%" />
+                    <ReactPlayer className='react-player' controls={true} url={videoUrl} height="75%" width="100%" />
                 </div>
             </Container>
         </>

@@ -23,11 +23,11 @@ function VideoInfo({ filter }) {
         <>
             {data.map((item) => (
 
-                <Card key={item.videoId} sx={{ maxWidth: 400, padding: 2 }}>
+                <Card key={item.videoId} sx={{ maxWidth: 350, padding: 2 }}>
                     <CardMedia
                         component="img"
-                        height="200"
-                        width="320"
+                        // height="200"
+                        // width="350"
                         image={item.thumbnailUrl}
                         alt={item.title}
                         onClick={() => openVideo(item.videoId)}

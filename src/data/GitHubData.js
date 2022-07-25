@@ -49,7 +49,13 @@ export const data =
         {
             "id": "8",
             "title": "Step 8",
-            "summary": "Walkthrough the vidoes. The last one is optional.",
+            "summary": "Git Installation",
+            "content": "Walthrough the 1st video to install Git.",
+        },
+        {
+            "id": "9",
+            "title": "Step 8",
+            "summary": "Walkthrough the vidoes to learn how to use Git. The last one is optional.",
             "content": "",
         },
     ],

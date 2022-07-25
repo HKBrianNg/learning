@@ -34,13 +34,13 @@ function SearchVideo() {
     }
 
     return (
-        <Box sx={{ display: 'flex', alignItems: 'flex-end' }}>
+        <Box sx={{ display: 'flex', alignItems: 'flex-start' }}>
             <Search>
                 <Autocomplete
                     options={videoData}
                     getOptionLabel={(option) => option.title}
                     disablePortal
-                    sx={{ input: { color: "white", }, width: '40ch', }}
+                    sx={{ input: { color: "white", }, width: '30ch', }}
                     onChange={(event, value) => handleChange(value)}
                     renderInput={(params) => <TextField {...params} />}
                 />

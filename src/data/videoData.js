@@ -81,6 +81,18 @@ export const videoData = [
         "category": "IT",
         "subCategory": 'GitHub',
         "source": "youtube#video",
+        "videoId": "nbFwejIsHlY",
+        "publishedAt": "2019-10-29",
+        "title": "Git: How to Download & Install Git on Windows 10 & Choose Install Options",
+        "description": "A tutorial and how-to demonstration of a download and installation of Git on Windows 10 64 bit.  All install options are discussed in some detail in a step-by step fashion.  The Bash shell, MinTTY, and MinGW 64 bit are briefly discussed & the configuration / install options are considered.",
+        "thumbnailUrl": "https://i.ytimg.com/vi/nbFwejIsHlY/maxresdefault.jpg",
+    },
+
+    {
+        "id": "e2",
+        "category": "IT",
+        "subCategory": 'GitHub',
+        "source": "youtube#video",
         "videoId": "i_23KUAEtUM",
         "publishedAt": "2021-02-28",
         "title": "Using Git with Visual Studio Code (Official Beginner Tutorial)",
@@ -88,7 +100,7 @@ export const videoData = [
         "thumbnailUrl": "https://i.ytimg.com/vi/i_23KUAEtUM/maxresdefault.jpg",
     },
     {
-        "id": "e2",
+        "id": "e3",
         "category": "IT",
         "subCategory": 'GitHub',
         "source": "youtube#video",
@@ -99,7 +111,7 @@ export const videoData = [
         "thumbnailUrl": "https://i.ytimg.com/vi/eLmpKKaQL54/maxresdefault.jpg",
     },
     {
-        "id": "e3",
+        "id": "e4",
         "category": "IT",
         "subCategory": 'GitHub',
         "source": "youtube#video",
