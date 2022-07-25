@@ -81,13 +81,12 @@ export const videoData = [
         "category": "IT",
         "subCategory": 'GitHub',
         "source": "youtube#video",
-        "videoId": "nbFwejIsHlY",
-        "publishedAt": "2019-10-29",
-        "title": "Git: How to Download & Install Git on Windows 10 & Choose Install Options",
-        "description": "A tutorial and how-to demonstration of a download and installation of Git on Windows 10 64 bit.  All install options are discussed in some detail in a step-by step fashion.  The Bash shell, MinTTY, and MinGW 64 bit are briefly discussed & the configuration / install options are considered.",
-        "thumbnailUrl": "https://i.ytimg.com/vi/nbFwejIsHlY/maxresdefault.jpg",
+        "videoId": "8JJ101D3knE",
+        "publishedAt": "2020-09-15",
+        "title": "Git Tutorial for Beginners: Learn Git in 1 Hour",
+        "description": "Git tutorial for beginners - Learn Git for a career in DevOps/Software Engineering. This Git tutorial teaches you everything you need to learn Git basics.",
+        "thumbnailUrl": "https://i.ytimg.com/vi/8JJ101D3knE/maxresdefault.jpg",
     },
-
     {
         "id": "e2",
         "category": "IT",
