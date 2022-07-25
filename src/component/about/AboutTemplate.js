@@ -46,7 +46,6 @@ function AboutTemplate({ data, filter }) {
                                         ? (<Link target="_blank" rel="noopener" href={item.content}>{item.content}</Link>)
                                         : (item.content)
                                     }
-
                                 </AccordionDetails>
                             </Accordion>
                         ))}
