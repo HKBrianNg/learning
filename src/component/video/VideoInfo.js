@@ -23,7 +23,7 @@ function VideoInfo({ filter }) {
         <>
             {data.map((item) => (
 
-                <Card key={item.videoId} sx={{ maxWidth: 350, padding: 2 }}>
+                <Card key={item.videoId} sx={{ maxWidth: 250, padding: 2 }}>
                     <CardMedia
                         component="img"
                         // height="200"
@@ -43,14 +43,14 @@ function VideoInfo({ filter }) {
                             {item.description}
                         </Typography>
                     </CardContent>
-                    <CardActions disableSpacing>
+                    {/* <CardActions disableSpacing>
                         <IconButton aria-label="add to favorites">
                             <FavoriteIcon />
                         </IconButton>
                         <IconButton aria-label="share">
                             <ShareIcon />
                         </IconButton>
-                    </CardActions>
+                    </CardActions> */}
                 </Card>
             ))}
         </>

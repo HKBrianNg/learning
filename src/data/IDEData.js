@@ -18,9 +18,22 @@ export const data =
         },
         {
             "id": "3",
-            "title": "Step 3 (optional)",
+            "title": "Step 3",
             "summary": "Waltkthrough a real example - How I setup VS Code for a beginners front-end workflow",
             "content": "Here's how to use VS Code to create a simple setup for a front-end workflow for HTML, SCSS/CSS, and vanilla JavaScript files.",
         },
+        {
+            "id": "4",
+            "title": "Step 4",
+            "summary": "Install Linux on Windows with WSL",
+            "content": "https://docs.microsoft.com/en-us/windows/wsl/install",
+        },
+        {
+            "id": "5",
+            "title": "Step 5",
+            "summary": "Install and get started setting up Windows Terminal",
+            "content": "https://docs.microsoft.com/en-us/windows/terminal/install",
+        },
+
     ],
 }
