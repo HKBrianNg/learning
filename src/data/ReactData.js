@@ -115,8 +115,8 @@ export const data =
         {
             "id": "19",
             "title": "Step 19",
-            "summary": "",
-            "content": "",
+            "summary": "Full React Tutorial #19 - Handling Fetch Errors",
+            "content": "https://www.youtube.com/watch?v=DTBta08fXGU",
         },
         {
             "id": "20",
