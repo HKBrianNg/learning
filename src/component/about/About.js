@@ -10,9 +10,11 @@ import { data as AppServiceData } from '../../data/AppServiceData';
 import { data as DevOpsData } from '../../data/DevOpsData';
 import { data as CICDData } from '../../data/CICDData';
 import { data as IDEData } from '../../data/IDEData';
-import { data as DockerData } from '../../data/DockerData';
-import { data as MicroservicesData } from '../../data/MicroservicesData';
 import { data as GitHubData } from '../../data/GitHubData';
+import { data as DockerData } from '../../data/DockerData';
+import { data as ReactData } from '../../data/ReactData';
+import { data as MicroservicesData } from '../../data/MicroservicesData';
+
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -67,7 +69,8 @@ function About() {
                         <Tab label="IDE" {...a11yProps(3)} />
                         <Tab label="GitHub" {...a11yProps(4)} />
                         <Tab label="Docker" {...a11yProps(5)} />
-                        <Tab label="Microservices" {...a11yProps(6)} />
+                        <Tab label="React" {...a11yProps(6)} />
+                        <Tab label="Microservices" {...a11yProps(7)} />
                     </Tabs>
                 </Box>
                 <TabPanel value={value} index={0}>
@@ -89,6 +92,9 @@ function About() {
                     <AboutTemplate data={DockerData} filter={{ category: 'IT', subCategory: 'Docker' }} />
                 </TabPanel>
                 <TabPanel value={value} index={6}>
+                    <AboutTemplate data={ReactData} filter={{ category: 'IT', subCategory: 'React' }} />
+                </TabPanel>
+                <TabPanel value={value} index={7}>
                     <AboutTemplate data={MicroservicesData} filter={{ category: 'IT', subCategory: 'Microservices' }} />
                 </TabPanel>
             </Box>

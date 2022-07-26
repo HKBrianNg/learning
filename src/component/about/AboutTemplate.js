@@ -30,7 +30,7 @@ function AboutTemplate({ data, filter }) {
                             </Typography>
                         </Paper>
                     </Box>
-                    <Box sx={{ flex: 1, padding: 1 }}>
+                    <Box sx={{ flex: 2, padding: 1 }}>
                         {data.items.map((item) => (
                             <Accordion key={item.id} expanded={expanded === item.id} onChange={handleChange(item.id)}>
                                 <AccordionSummary
