@@ -145,14 +145,14 @@ export const data =
         {
             "id": "24",
             "title": "Step 24",
-            "summary": "",
-            "content": "",
+            "summary": "Full React Tutorial #24 - useEffect Cleanup",
+            "content": "https://www.youtube.com/watch?v=aKOQtGLT-Yk",
         },
         {
             "id": "25",
             "title": "Step 25",
-            "summary": "",
-            "content": "",
+            "summary": "Full React Tutorial #25 - Route Parameters",
+            "content": "https://www.youtube.com/watch?v=t7VmF4WsLCo",
         },
         {
             "id": "26",
