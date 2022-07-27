@@ -139,8 +139,8 @@ export const data =
         {
             "id": "23",
             "title": "Step 23",
-            "summary": "",
-            "content": "",
+            "summary": "Full React Tutorial #23 - Router Links",
+            "content": "https://www.youtube.com/watch?v=DO-pSysGItQ",
         },
         {
             "id": "24",
