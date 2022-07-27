@@ -181,14 +181,20 @@ export const data =
         {
             "id": "30",
             "title": "Step 30",
-            "summary": "",
-            "content": "",
+            "summary": "Full React Tutorial #30 - Programmatic Redirects",
+            "content": "https://www.youtube.com/watch?v=TmVqwhBUiSM",
         },
         {
             "id": "31",
             "title": "Step 31",
-            "summary": "",
-            "content": "",
+            "summary": "Full React Tutorial #31 - Deleting Blogs",
+            "content": "https://www.youtube.com/watch?v=Wb-0CkLiyQk",
+        },
+        {
+            "id": "32",
+            "title": "Step 32",
+            "summary": "Full React Tutorial #32 - 404 Pages & Next Steps",
+            "content": "https://www.youtube.com/watch?v=XW0t2lk4Ffo",
         },
 
     ],
