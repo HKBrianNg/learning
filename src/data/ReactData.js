@@ -157,12 +157,24 @@ export const data =
         {
             "id": "26",
             "title": "Step 26",
-            "summary": "",
-            "content": "",
+            "summary": "Full React Tutorial #26 - Reusing Custom Hooks",
+            "content": "https://www.youtube.com/watch?v=c-5VXl8yPQA",
         },
         {
             "id": "27",
             "title": "Step 27",
+            "summary": "Full React Tutorial #27 - Controlled Inputs (forms)",
+            "content": "https://www.youtube.com/watch?v=IkMND33x0qQ",
+        },
+        {
+            "id": "28",
+            "title": "Step 28",
+            "summary": "",
+            "content": "",
+        },
+        {
+            "id": "29",
+            "title": "Step 29",
             "summary": "",
             "content": "",
         },
