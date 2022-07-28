@@ -13,6 +13,7 @@ import { data as IDEData } from '../../data/IDEData';
 import { data as GitHubData } from '../../data/GitHubData';
 import { data as DockerData } from '../../data/DockerData';
 import { data as ReactData } from '../../data/ReactData';
+import { data as MERNData } from '../../data/MERNData';
 import { data as MicroservicesData } from '../../data/MicroservicesData';
 
 
@@ -70,7 +71,8 @@ function About() {
                         <Tab label="GitHub" {...a11yProps(4)} />
                         <Tab label="Docker" {...a11yProps(5)} />
                         <Tab label="React" {...a11yProps(6)} />
-                        <Tab label="Microservices" {...a11yProps(7)} />
+                        <Tab label="MERN" {...a11yProps(7)} />
+                        <Tab label="Microservices" {...a11yProps(8)} />
                     </Tabs>
                 </Box>
                 <TabPanel value={value} index={0}>
@@ -95,6 +97,9 @@ function About() {
                     <AboutTemplate data={ReactData} filter={{ category: 'IT', subCategory: 'React' }} />
                 </TabPanel>
                 <TabPanel value={value} index={7}>
+                    <AboutTemplate data={MERNData} filter={{ category: 'IT', subCategory: 'MERN' }} />
+                </TabPanel>
+                <TabPanel value={value} index={8}>
                     <AboutTemplate data={MicroservicesData} filter={{ category: 'IT', subCategory: 'Microservices' }} />
                 </TabPanel>
             </Box>
